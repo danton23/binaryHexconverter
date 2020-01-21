@@ -25,7 +25,7 @@ int DectoBin(int dec){
     cout<<"byte[8]"<<byte[8];
     cout<<"binary="<<byte[0]<<byte[1]<<byte[2]<<byte[3]<<byte[4]<<byte[5]<<byte[6]<<byte[7];
     string binarynum;
-    for(int i=0;i<8;i++){
+    for(int i=7;i>-1;i--){
      binarynum+=std::to_string(byte[i]);
     }
     cout<<"binary string="<<binarynum;
